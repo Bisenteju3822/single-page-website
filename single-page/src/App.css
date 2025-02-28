@@ -1,0 +1,235 @@
+/* App.css */
+body {
+  background-color: #f0f4f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  /* Set default font color to a dark shade */
+}
+
+nav {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  /* Ensure the logo and nav items are properly spaced */
+  align-items: center;
+  /* Center items vertically */
+  position: fixed;
+  top: 0;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.logo {
+  color: #00796b;
+  font-size: 1.5rem;
+  margin-left: 20px;
+  /* Add some margin to the left of the logo */
+}
+
+.ul {
+  color: darkslategray;
+  display: flex;
+  gap: 40px;
+  /* Adjust gap for better spacing */
+  margin-right: 20px;
+  /* Add some margin to the right for balance */
+}
+
+.ul li {
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  /* Center items vertically */
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.ul li:hover {
+  background-color: #00796b;
+  color: #ffffff;
+  border-radius: 4px;
+  /* Rounded corners for hover effect */
+}
+
+/* Hero Section Styles */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e0f7fa;
+  padding: 100px 20px 20px;
+  /* Adjust padding to ensure space for fixed nav */
+  margin-top: 80px;
+  /* Account for fixed nav height */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  /* Smooth shadow transition */
+}
+
+.hero:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Deeper shadow on hover */
+}
+
+.hero-content {
+  max-width: 50%;
+  color: #333;
+  /* Set font color to a dark shade */
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #00796b;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+  /* Rounded corners */
+  transition: background-color 0.3s ease;
+  /* Smooth background-color transition */
+}
+
+.cta-button:hover {
+  background-color: #004d40;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  /* Add some margin to the right for better spacing */
+}
+
+.hero-image img {
+  max-width: 80%;
+  border-radius: 8px;
+  /* Rounded corners for image */
+  transition: transform 0.3s ease;
+  /* Smooth transform transition */
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+  /* Slight zoom effect on hover */
+}
+
+/* Features Section Styles */
+.features,
+.services {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  color: #333;
+  /* Set font color to a dark shade */
+}
+
+.features h2,
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.feature-cards,
+.service-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.feature-card,
+.service-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card img,
+.service-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.feature-card h3,
+.service-card h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+.feature-card p,
+.service-card p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #555;
+  /* Slightly lighter font color for contrast */
+}
+
+.feature-card:hover,
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-nav {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav li {
+  margin: 0 15px;
+  transition: color 0.3s ease;
+  /* Smooth color transition */
+}
+
+.footer-nav li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-nav li a:hover {
+  text-decoration: underline;
+  color: #FFD700;
+  /* Gold color on hover */
+}
